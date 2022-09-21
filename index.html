@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <main>
+        <form id="form" onsubmit="handleSubmit()">
+            
+            <section class="form-title">
+                <h1>Formulir Pendaftaran Pasien Baru</h1>
+                <br>
+                <h4>Perhatian: Harap mengisi formulir ini dengan lengkap dan jelas</h3>
+                <br>
+                <p>Pemerintah Kabupaten Solok</p>
+                <p>Rumah Sakit Umum Daerah Arosuka</p>
+            </section>
+
+            <h2>Identitas Pasien</h2>
+            
+            <section class="form-input">
+                <label for="nama-pasien">Nama Pasien</label>
+                <input type="text" name="nama-pasien" id="nama-pasien" required>
+
+                <label for="tempat-lahir">Tempat Lahir</label>
+                <input type="text" name="tempat-lahir" id="tanggal-lahir" required>
+
+                <label for="tanggal-lahir">Tanggal Lahir</label>
+                <input type="date" name="tanggal-lahir" id="tanggal-lahir" required>
+
+                <label for="jenis-kelamin">Jenis Kelamin</label>
+                <input type="text" name="jenis-kelamin" id="jenis-kelamin" required>
+
+                <label for="alamat">Alamat</label>
+                <input type="text" name="alamat" id="alamat" required>
+
+                <label for="rt">RT</label>
+                <input type="number" name="rt" id="rt" required>
+
+                <label for="rw">RW</label>
+                <input type="number" name="rw" id="rw" required>
+
+                <label for="provinsi">Provinsi</label>
+                <select onchange="handleProvinsi()" name="provinsi" id="provinsi" required></select>
+
+                <label for="kota">Kota/Kabupaten</label>
+                <select onchange="handleKota()" name="kota" id="kota" required></select>
+
+                <label for="kecamatan">Kecamatan</label>
+                <select onchange="handleKecamatan()" name="kecamatan" id="kecamatan" required></select>
+
+                <label for="kelurahan">Kelurahan</label>
+                <select onchange="handleKelurahan()" name="kelurahan" id="kelurahan" required></select>
+
+                <label for="nomor-telepon">No. Telepon</label>
+                <input type="number" name="nomor-telepon" id="nomor-telepon" required>
+
+                <label for="kodepos">Kode Pos</label>
+                <select name="kodepos" id="kodepos" required></select>
+
+                <label for="agama">Agama</label>
+                <select name="agama" id="agama" required></select>
+
+                <label for="pendidikan">Pendidikan Terakhir</label>
+                <input type="text" name="pendidikan" id="pendidikan" required>
+
+                <label for="Pekerjaan">Pekerjaan</label>
+                <input type="text" name="Pekerjaan" id="Pekerjaan" required>
+            </section>
+            
+            <h2>Penanggung Jawab Pasien</h2>
+
+            <section class="form-input">
+                <label for="hubungan">Hubungan Dengan Pasien</label>
+                <input type="text" name="hubungan" id="hubungan" required>
+
+                <label for="penanggung-jawab">Nama Penanggung Jawab</label>
+                <input type="text" name="penanggung-jawab" id="penanggung-jawab" required>
+
+                <label for="pendidikan-pj">Pendidikan Penanggung Jawab</label>
+                <input type="text" name="pendidikan-pj" id="pendidikan-pj" required>
+
+                <label for="pekerjaan-pj">Pekerjaan Penanggung Jawab</label>
+                <input type="text" name="pekerjaan-pj" id="pekerjaan-pj" required>
+            </section>
+            <section class="form-submit">          
+                <input type="submit" id="submit-button"></Input>
+            </section>
+
+        </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
